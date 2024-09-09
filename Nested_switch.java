@@ -8,28 +8,43 @@ public class Nested_switch {
         System.out.println("Enter the Department: ");
         String dept = sc.next();
 
+        // switch(empId){
+        //     case 0:
+        //         System.out.println("Pratham V Bhat");
+        //         break;
+        //     case 1:
+        //         System.out.println("Omkar Bhat");
+        //         break;
+        //     case 2:
+        //         System.out.println("Employee Number 2");
+        //         switch(dept) {
+        //             case "IT":
+        //                 System.out.println("IT Departmant");
+        //                 break;
+        //             case "MG":
+        //                 System.out.println("Management Department");
+        //                 break;
+        //             default:
+        //                 System.out.println("Enter a valid Department");
+        //         }
+        //         break;
+        //     default:
+        //         System.out.println("Enter a valid Employee ID");
+        // }
+
+        // Better way to write the above code
         switch(empId){
-            case 0:
-                System.out.println("Pratham V Bhat");
-                break;
-            case 1:
-                System.out.println("Omkar Bhat");
-                break;
-            case 2:
+            case 0 -> System.out.println("Pratham V Bhat");
+            case 1 -> System.out.println("Omkar Bhat");
+            case 2 -> {
                 System.out.println("Employee Number 2");
                 switch(dept) {
-                    case "IT":
-                        System.out.println("IT Departmant");
-                        break;
-                    case "MG":
-                        System.out.println("Management Department");
-                        break;
-                    default:
-                        System.out.println("Enter a valid Department");
+                    case "IT" -> System.out.println("IT Department");
+                    case "MG" -> System.out.println("Management Department");
+                    default -> System.out.println("Enter a valid Department");
                 }
-                break;
-            default:
-                System.out.println("Enter a valid Employee ID");
+            }
+            default -> System.out.println("Enter a valid Employee ID");
         }
     }
 }
