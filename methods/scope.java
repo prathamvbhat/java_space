@@ -10,10 +10,14 @@ public class scope {
 
         {
             // int a = 30; // already initialized outside the block. Cannot reinitialize it.
+            a= 100; // resign the original ref values to some other value.
+            System.out.println(a);
+            
             int c = 30;
             // variable initialized within the block can be accessed only in that block.
         }
         // System.out.println(c); // c values cannot be accesed as its writen in the above block.
+        System.out.println(a);
     }
 
     static void random(){
