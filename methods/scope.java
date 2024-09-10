@@ -18,6 +18,17 @@ public class scope {
         }
         // System.out.println(c); // c values cannot be accesed as its writen in the above block.
         System.out.println(a);
+
+        int c = 900; // this variable can be reinitialized as it does not know that a c has been initialized indie a particula block.
+
+        //scope for for loop
+        for(int i = 0; i < 4; i++){
+            System.out.println(i);
+            a = 10000;
+        }
+
+        System.out.println(a); // a value is changed in the for loop. So the value of a will be 10000.
+        System.out.println(i); // this will not be executed as it does not know what is i. So scope of i will only remain in the loop, not outside the loop.
     }
 
     static void random(){
