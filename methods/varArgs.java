@@ -3,11 +3,12 @@ import java.util.Arrays;
 public class varArgs {
     public static void main(String[] args) {
         fun(1,2,3,4,5,6,7,8,9,10); // arguments can be passed as many we want, it can be zero of infinte.
+        multiple(0, 0, "Pratham", "Omkar", "Joywing");
     }
 
 
     // if we want to send mixed multiple arguments it is possible.
-    static void multiple(int a, int b, String ...v){
+    static void multiple(int a, int b, String ...v){ // variable lenght argumant should always come at the end of the argument list.
         
     }
 
