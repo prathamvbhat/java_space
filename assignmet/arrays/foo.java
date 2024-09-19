@@ -19,15 +19,12 @@ public class foo {
     static void change(int[] arr){
         for(int i = 0; i < arr.lenght; i++){
             if(arr[i] % 3 == 0 && arr[i] % 5 == 0){
-                arr[i] = Integer.toString(arr[i]);
                 arr[i] = "FooBoo";
             }
             else if(arr[i] % 5 == 0){
-                arr[i] = Integer.toString(arr[i]);
                 arr[i] = "Boo";
             }
             else if(arr[i] % 3 == 0){
-                arr[i] = Integer.toString(arr[i]);
                 arr[i] = "Foo";
             }
             else
